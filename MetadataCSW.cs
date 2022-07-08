@@ -50467,5 +50467,4290 @@ namespace www.opengis.net
         }
     }
 
+    //ISO19115-2
+
+
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("QE_CoverageResult", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class QE_CoverageResult_Type : AbstractDQ_Result_Type
+    {
+
+        private MD_SpatialRepresentationTypeCode_PropertyType spatialRepresentationTypeField;
+
+        private MD_SpatialRepresentation_PropertyType resultSpatialRepresentationField;
+
+        private MD_CoverageDescription_PropertyType resultContentDescriptionField;
+
+        private MD_Format_PropertyType resultFormatField;
+
+        private MX_DataFile_PropertyType resultFileField;
+
+        /// <remarks/>
+        public MD_SpatialRepresentationTypeCode_PropertyType spatialRepresentationType
+        {
+            get
+            {
+                return this.spatialRepresentationTypeField;
+            }
+            set
+            {
+                this.spatialRepresentationTypeField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MD_SpatialRepresentation_PropertyType resultSpatialRepresentation
+        {
+            get
+            {
+                return this.resultSpatialRepresentationField;
+            }
+            set
+            {
+                this.resultSpatialRepresentationField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MD_CoverageDescription_PropertyType resultContentDescription
+        {
+            get
+            {
+                return this.resultContentDescriptionField;
+            }
+            set
+            {
+                this.resultContentDescriptionField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MD_Format_PropertyType resultFormat
+        {
+            get
+            {
+                return this.resultFormatField;
+            }
+            set
+            {
+                this.resultFormatField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MX_DataFile_PropertyType resultFile
+        {
+            get
+            {
+                return this.resultFileField;
+            }
+            set
+            {
+                this.resultFileField = value;
+            }
+        }
+    }
+
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_Georectified", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_Georectified_Type : MD_Georectified_Type
+    {
+
+        private MI_GCP_PropertyType[] checkPointField;
+
+        private MI_GCPCollection_PropertyType[] geolocationIdentificationField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("checkPoint")]
+        public MI_GCP_PropertyType[] checkPoint
+        {
+            get
+            {
+                return this.checkPointField;
+            }
+            set
+            {
+                this.checkPointField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("geolocationIdentification")]
+        public MI_GCPCollection_PropertyType[] geolocationIdentification
+        {
+            get
+            {
+                return this.geolocationIdentificationField;
+            }
+            set
+            {
+                this.geolocationIdentificationField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_GCP_PropertyType
+    {
+
+        private MI_GCP_Type mI_GCPField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_GCP_Type MI_GCP
+        {
+            get
+            {
+                return this.mI_GCPField;
+            }
+            set
+            {
+                this.mI_GCPField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_GCP", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_GCP_Type : AbstractObject_Type
+    {
+
+        private DirectPosition_PropertyType geographicCoordinatesField;
+
+        private DQ_Element_PropertyType[] accuracyReportField;
+
+        /// <remarks/>
+        public DirectPosition_PropertyType geographicCoordinates
+        {
+            get
+            {
+                return this.geographicCoordinatesField;
+            }
+            set
+            {
+                this.geographicCoordinatesField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("accuracyReport")]
+        public DQ_Element_PropertyType[] accuracyReport
+        {
+            get
+            {
+                return this.accuracyReportField;
+            }
+            set
+            {
+                this.accuracyReportField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class DirectPosition_PropertyType
+    {
+
+        private DirectPositionType posField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.opengis.net/gml/3.2")]
+        public DirectPositionType pos
+        {
+            get
+            {
+                return this.posField;
+            }
+            set
+            {
+                this.posField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_GCPCollection_PropertyType
+    {
+
+        private MI_GCPCollection_Type mI_GCPCollectionField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_GCPCollection_Type MI_GCPCollection
+        {
+            get
+            {
+                return this.mI_GCPCollectionField;
+            }
+            set
+            {
+                this.mI_GCPCollectionField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_GCPCollection", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_GCPCollection_Type : AbstractMI_GeolocationInformation_Type
+    {
+
+        private Integer_PropertyType collectionIdentificationField;
+
+        private CharacterString_PropertyType collectionNameField;
+
+        private MD_ReferenceSystem_PropertyType coordinateReferenceSystemField;
+
+        private MI_GCP_PropertyType[] gcpField;
+
+        /// <remarks/>
+        public Integer_PropertyType collectionIdentification
+        {
+            get
+            {
+                return this.collectionIdentificationField;
+            }
+            set
+            {
+                this.collectionIdentificationField = value;
+            }
+        }
+
+        /// <remarks/>
+        public CharacterString_PropertyType collectionName
+        {
+            get
+            {
+                return this.collectionNameField;
+            }
+            set
+            {
+                this.collectionNameField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MD_ReferenceSystem_PropertyType coordinateReferenceSystem
+        {
+            get
+            {
+                return this.coordinateReferenceSystemField;
+            }
+            set
+            {
+                this.coordinateReferenceSystemField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("gcp")]
+        public MI_GCP_PropertyType[] gcp
+        {
+            get
+            {
+                return this.gcpField;
+            }
+            set
+            {
+                this.gcpField = value;
+            }
+        }
+    }
+
+
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_Georeferenceable", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_Georeferenceable_Type : MD_Georeferenceable_Type
+    {
+
+        private MI_GeolocationInformation_PropertyType[] geolocationInformationField;
+
+        private MI_Platform_PropertyType platformParametersField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("geolocationInformation")]
+        public MI_GeolocationInformation_PropertyType[] geolocationInformation
+        {
+            get
+            {
+                return this.geolocationInformationField;
+            }
+            set
+            {
+                this.geolocationInformationField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MI_Platform_PropertyType platformParameters
+        {
+            get
+            {
+                return this.platformParametersField;
+            }
+            set
+            {
+                this.platformParametersField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(MI_GCPCollection_Type))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public abstract partial class AbstractMI_GeolocationInformation_Type : AbstractObject_Type
+    {
+
+        private DQ_DataQuality_PropertyType[] qualityInfoField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("qualityInfo")]
+        public DQ_DataQuality_PropertyType[] qualityInfo
+        {
+            get
+            {
+                return this.qualityInfoField;
+            }
+            set
+            {
+                this.qualityInfoField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_GeolocationInformation_PropertyType
+    {
+
+        private AbstractMI_GeolocationInformation_Type abstractMI_GeolocationInformationField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public AbstractMI_GeolocationInformation_Type AbstractMI_GeolocationInformation
+        {
+            get
+            {
+                return this.abstractMI_GeolocationInformationField;
+            }
+            set
+            {
+                this.abstractMI_GeolocationInformationField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_Platform_PropertyType
+    {
+
+        private MI_Platform_Type mI_PlatformField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_Platform_Type MI_Platform
+        {
+            get
+            {
+                return this.mI_PlatformField;
+            }
+            set
+            {
+                this.mI_PlatformField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_Platform", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_Platform_Type : AbstractObject_Type
+    {
+
+        private CI_Citation_PropertyType[] citationField;
+
+        private MD_Identifier_PropertyType identifierField;
+
+        private CharacterString_PropertyType descriptionField;
+
+        private CI_ResponsibleParty_PropertyType[] sponsorField;
+
+        private MI_Instrument_PropertyType[] instrumentField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("citation")]
+        public CI_Citation_PropertyType[] citation
+        {
+            get
+            {
+                return this.citationField;
+            }
+            set
+            {
+                this.citationField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MD_Identifier_PropertyType identifier
+        {
+            get
+            {
+                return this.identifierField;
+            }
+            set
+            {
+                this.identifierField = value;
+            }
+        }
+
+        /// <remarks/>
+        public CharacterString_PropertyType description
+        {
+            get
+            {
+                return this.descriptionField;
+            }
+            set
+            {
+                this.descriptionField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("sponsor")]
+        public CI_ResponsibleParty_PropertyType[] sponsor
+        {
+            get
+            {
+                return this.sponsorField;
+            }
+            set
+            {
+                this.sponsorField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("instrument")]
+        public MI_Instrument_PropertyType[] instrument
+        {
+            get
+            {
+                return this.instrumentField;
+            }
+            set
+            {
+                this.instrumentField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_Instrument_PropertyType
+    {
+
+        private MI_Instrument_Type mI_InstrumentField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_Instrument_Type MI_Instrument
+        {
+            get
+            {
+                return this.mI_InstrumentField;
+            }
+            set
+            {
+                this.mI_InstrumentField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_Instrument", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_Instrument_Type : AbstractObject_Type
+    {
+
+        private CI_Citation_PropertyType[] citationField;
+
+        private MD_Identifier_PropertyType identifierField;
+
+        private CharacterString_PropertyType typeField;
+
+        private CharacterString_PropertyType descriptionField;
+
+        private MI_Platform_PropertyType mountedOnField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("citation")]
+        public CI_Citation_PropertyType[] citation
+        {
+            get
+            {
+                return this.citationField;
+            }
+            set
+            {
+                this.citationField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MD_Identifier_PropertyType identifier
+        {
+            get
+            {
+                return this.identifierField;
+            }
+            set
+            {
+                this.identifierField = value;
+            }
+        }
+
+        /// <remarks/>
+        public CharacterString_PropertyType type
+        {
+            get
+            {
+                return this.typeField;
+            }
+            set
+            {
+                this.typeField = value;
+            }
+        }
+
+        /// <remarks/>
+        public CharacterString_PropertyType description
+        {
+            get
+            {
+                return this.descriptionField;
+            }
+            set
+            {
+                this.descriptionField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MI_Platform_PropertyType mountedOn
+        {
+            get
+            {
+                return this.mountedOnField;
+            }
+            set
+            {
+                this.mountedOnField = value;
+            }
+        }
+    }
+
+
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_Band", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_Band_Type : MD_Band_Type
+    {
+
+        private MI_BandDefinition_PropertyType bandBoundaryDefinitionField;
+
+        private Real_PropertyType nominalSpatialResolutionField;
+
+        private MI_TransferFunctionTypeCode_PropertyType transferFunctionTypeField;
+
+        private MI_PolarisationOrientationCode_PropertyType transmittedPolarisationField;
+
+        private MI_PolarisationOrientationCode_PropertyType detectedPolarisationField;
+
+        /// <remarks/>
+        public MI_BandDefinition_PropertyType bandBoundaryDefinition
+        {
+            get
+            {
+                return this.bandBoundaryDefinitionField;
+            }
+            set
+            {
+                this.bandBoundaryDefinitionField = value;
+            }
+        }
+
+        /// <remarks/>
+        public Real_PropertyType nominalSpatialResolution
+        {
+            get
+            {
+                return this.nominalSpatialResolutionField;
+            }
+            set
+            {
+                this.nominalSpatialResolutionField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MI_TransferFunctionTypeCode_PropertyType transferFunctionType
+        {
+            get
+            {
+                return this.transferFunctionTypeField;
+            }
+            set
+            {
+                this.transferFunctionTypeField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MI_PolarisationOrientationCode_PropertyType transmittedPolarisation
+        {
+            get
+            {
+                return this.transmittedPolarisationField;
+            }
+            set
+            {
+                this.transmittedPolarisationField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MI_PolarisationOrientationCode_PropertyType detectedPolarisation
+        {
+            get
+            {
+                return this.detectedPolarisationField;
+            }
+            set
+            {
+                this.detectedPolarisationField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_BandDefinition_PropertyType
+    {
+
+        private CodeListValue_Type mI_BandDefinitionField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public CodeListValue_Type MI_BandDefinition
+        {
+            get
+            {
+                return this.mI_BandDefinitionField;
+            }
+            set
+            {
+                this.mI_BandDefinitionField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_TransferFunctionTypeCode_PropertyType
+    {
+
+        private CodeListValue_Type mI_TransferFunctionTypeCodeField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public CodeListValue_Type MI_TransferFunctionTypeCode
+        {
+            get
+            {
+                return this.mI_TransferFunctionTypeCodeField;
+            }
+            set
+            {
+                this.mI_TransferFunctionTypeCodeField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_PolarisationOrientationCode_PropertyType
+    {
+
+        private CodeListValue_Type mI_PolarisationOrientationCodeField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public CodeListValue_Type MI_PolarisationOrientationCode
+        {
+            get
+            {
+                return this.mI_PolarisationOrientationCodeField;
+            }
+            set
+            {
+                this.mI_PolarisationOrientationCodeField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_ImageDescription", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_ImageDescription_Type : MD_ImageDescription_Type
+    {
+
+        private MI_RangeElementDescription_PropertyType[] rangeElementDescriptionField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("rangeElementDescription")]
+        public MI_RangeElementDescription_PropertyType[] rangeElementDescription
+        {
+            get
+            {
+                return this.rangeElementDescriptionField;
+            }
+            set
+            {
+                this.rangeElementDescriptionField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_RangeElementDescription_PropertyType
+    {
+
+        private MI_RangeElementDescription_Type mI_RangeElementDescriptionField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_RangeElementDescription_Type MI_RangeElementDescription
+        {
+            get
+            {
+                return this.mI_RangeElementDescriptionField;
+            }
+            set
+            {
+                this.mI_RangeElementDescriptionField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_RangeElementDescription", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_RangeElementDescription_Type : AbstractObject_Type
+    {
+
+        private CharacterString_PropertyType nameField;
+
+        private CharacterString_PropertyType definitionField;
+
+        private Record_PropertyType[] rangeElementField;
+
+        /// <remarks/>
+        public CharacterString_PropertyType name
+        {
+            get
+            {
+                return this.nameField;
+            }
+            set
+            {
+                this.nameField = value;
+            }
+        }
+
+        /// <remarks/>
+        public CharacterString_PropertyType definition
+        {
+            get
+            {
+                return this.definitionField;
+            }
+            set
+            {
+                this.definitionField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("rangeElement")]
+        public Record_PropertyType[] rangeElement
+        {
+            get
+            {
+                return this.rangeElementField;
+            }
+            set
+            {
+                this.rangeElementField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_CoverageDescription", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_CoverageDescription_Type : MD_CoverageDescription_Type
+    {
+
+        private MI_RangeElementDescription_PropertyType[] rangeElementDescriptionField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("rangeElementDescription")]
+        public MI_RangeElementDescription_PropertyType[] rangeElementDescription
+        {
+            get
+            {
+                return this.rangeElementDescriptionField;
+            }
+            set
+            {
+                this.rangeElementDescriptionField = value;
+            }
+        }
+    }
+
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MX_DataFile_PropertyType
+    {
+
+        private MX_DataFile_Type mX_DataFileField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MX_DataFile_Type MX_DataFile
+        {
+            get
+            {
+                return this.mX_DataFileField;
+            }
+            set
+            {
+                this.mX_DataFileField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MX_DataFile", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MX_DataFile_Type : AbstractObject_Type
+    {
+
+        private MD_Format_PropertyType fileFormatField;
+
+        /// <remarks/>
+        public MD_Format_PropertyType fileFormat
+        {
+            get
+            {
+                return this.fileFormatField;
+            }
+            set
+            {
+                this.fileFormatField = value;
+            }
+        }
+    }
+
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("QE_Usability", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class QE_Usability_Type : AbstractDQ_Element_Type
+    {
+    }
+
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("LE_Source", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class LE_Source_Type : LI_Source_Type
+    {
+
+        private MD_Identifier_PropertyType processedLevelField;
+
+        private LE_NominalResolution_PropertyType resolutionField;
+
+        /// <remarks/>
+        public MD_Identifier_PropertyType processedLevel
+        {
+            get
+            {
+                return this.processedLevelField;
+            }
+            set
+            {
+                this.processedLevelField = value;
+            }
+        }
+
+        /// <remarks/>
+        public LE_NominalResolution_PropertyType resolution
+        {
+            get
+            {
+                return this.resolutionField;
+            }
+            set
+            {
+                this.resolutionField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class LE_NominalResolution_PropertyType
+    {
+
+        private LE_NominalResolution_Type lE_NominalResolutionField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public LE_NominalResolution_Type LE_NominalResolution
+        {
+            get
+            {
+                return this.lE_NominalResolutionField;
+            }
+            set
+            {
+                this.lE_NominalResolutionField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("LE_NominalResolution", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class LE_NominalResolution_Type
+    {
+
+        private Distance_PropertyType itemField;
+
+        private ItemChoiceType4E itemElementNameField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("groundResolution", typeof(Distance_PropertyType))]
+        [System.Xml.Serialization.XmlElementAttribute("scanningResolution", typeof(Distance_PropertyType))]
+        [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
+        public Distance_PropertyType Item
+        {
+            get
+            {
+                return this.itemField;
+            }
+            set
+            {
+                this.itemField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public ItemChoiceType4E ItemElementName
+        {
+            get
+            {
+                return this.itemElementNameField;
+            }
+            set
+            {
+                this.itemElementNameField = value;
+            }
+        }
+    }
+
+ 
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi", IncludeInSchema = false)]
+    public enum ItemChoiceType4E
+    {
+
+        /// <remarks/>
+        groundResolution,
+
+        /// <remarks/>
+        scanningResolution,
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("LE_ProcessStep", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class LE_ProcessStep_Type : LI_ProcessStep_Type
+    {
+
+        private LE_Source_PropertyType[] outputField;
+
+        private LE_ProcessStepReport_PropertyType[] reportField;
+
+        private LE_Processing_PropertyType processingInformationField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("output")]
+        public LE_Source_PropertyType[] output
+        {
+            get
+            {
+                return this.outputField;
+            }
+            set
+            {
+                this.outputField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("report")]
+        public LE_ProcessStepReport_PropertyType[] report
+        {
+            get
+            {
+                return this.reportField;
+            }
+            set
+            {
+                this.reportField = value;
+            }
+        }
+
+        /// <remarks/>
+        public LE_Processing_PropertyType processingInformation
+        {
+            get
+            {
+                return this.processingInformationField;
+            }
+            set
+            {
+                this.processingInformationField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class LE_Source_PropertyType
+    {
+
+        private LE_Source_Type lE_SourceField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public LE_Source_Type LE_Source
+        {
+            get
+            {
+                return this.lE_SourceField;
+            }
+            set
+            {
+                this.lE_SourceField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class LE_ProcessStepReport_PropertyType
+    {
+
+        private LE_ProcessStepReport_Type lE_ProcessStepReportField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public LE_ProcessStepReport_Type LE_ProcessStepReport
+        {
+            get
+            {
+                return this.lE_ProcessStepReportField;
+            }
+            set
+            {
+                this.lE_ProcessStepReportField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("LE_ProcessStepReport", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class LE_ProcessStepReport_Type : AbstractObject_Type
+    {
+
+        private CharacterString_PropertyType nameField;
+
+        private CharacterString_PropertyType descriptionField;
+
+        private CharacterString_PropertyType fileTypeField;
+
+        /// <remarks/>
+        public CharacterString_PropertyType name
+        {
+            get
+            {
+                return this.nameField;
+            }
+            set
+            {
+                this.nameField = value;
+            }
+        }
+
+        /// <remarks/>
+        public CharacterString_PropertyType description
+        {
+            get
+            {
+                return this.descriptionField;
+            }
+            set
+            {
+                this.descriptionField = value;
+            }
+        }
+
+        /// <remarks/>
+        public CharacterString_PropertyType fileType
+        {
+            get
+            {
+                return this.fileTypeField;
+            }
+            set
+            {
+                this.fileTypeField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class LE_Processing_PropertyType
+    {
+
+        private LE_Processing_Type lE_ProcessingField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public LE_Processing_Type LE_Processing
+        {
+            get
+            {
+                return this.lE_ProcessingField;
+            }
+            set
+            {
+                this.lE_ProcessingField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("LE_Processing", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class LE_Processing_Type : AbstractObject_Type
+    {
+
+        private MD_Identifier_PropertyType identifierField;
+
+        private CI_Citation_PropertyType[] softwareReferenceField;
+
+        private CharacterString_PropertyType procedureDescriptionField;
+
+        private CI_Citation_PropertyType[] documentationField;
+
+        private CharacterString_PropertyType runTimeParametersField;
+
+        private LE_Algorithm_PropertyType[] algorithmField;
+
+        /// <remarks/>
+        public MD_Identifier_PropertyType identifier
+        {
+            get
+            {
+                return this.identifierField;
+            }
+            set
+            {
+                this.identifierField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("softwareReference")]
+        public CI_Citation_PropertyType[] softwareReference
+        {
+            get
+            {
+                return this.softwareReferenceField;
+            }
+            set
+            {
+                this.softwareReferenceField = value;
+            }
+        }
+
+        /// <remarks/>
+        public CharacterString_PropertyType procedureDescription
+        {
+            get
+            {
+                return this.procedureDescriptionField;
+            }
+            set
+            {
+                this.procedureDescriptionField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("documentation")]
+        public CI_Citation_PropertyType[] documentation
+        {
+            get
+            {
+                return this.documentationField;
+            }
+            set
+            {
+                this.documentationField = value;
+            }
+        }
+
+        /// <remarks/>
+        public CharacterString_PropertyType runTimeParameters
+        {
+            get
+            {
+                return this.runTimeParametersField;
+            }
+            set
+            {
+                this.runTimeParametersField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("algorithm")]
+        public LE_Algorithm_PropertyType[] algorithm
+        {
+            get
+            {
+                return this.algorithmField;
+            }
+            set
+            {
+                this.algorithmField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class LE_Algorithm_PropertyType
+    {
+
+        private LE_Algorithm_Type lE_AlgorithmField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public LE_Algorithm_Type LE_Algorithm
+        {
+            get
+            {
+                return this.lE_AlgorithmField;
+            }
+            set
+            {
+                this.lE_AlgorithmField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("LE_Algorithm", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class LE_Algorithm_Type : AbstractObject_Type
+    {
+
+        private CI_Citation_PropertyType citationField;
+
+        private CharacterString_PropertyType descriptionField;
+
+        /// <remarks/>
+        public CI_Citation_PropertyType citation
+        {
+            get
+            {
+                return this.citationField;
+            }
+            set
+            {
+                this.citationField = value;
+            }
+        }
+
+        /// <remarks/>
+        public CharacterString_PropertyType description
+        {
+            get
+            {
+                return this.descriptionField;
+            }
+            set
+            {
+                this.descriptionField = value;
+            }
+        }
+    }
+
+
+
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_Metadata", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_Metadata_Type : MD_Metadata_Type
+    {
+
+        private MI_AcquisitionInformation_PropertyType[] acquisitionInformationField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("acquisitionInformation")]
+        public MI_AcquisitionInformation_PropertyType[] acquisitionInformation
+        {
+            get
+            {
+                return this.acquisitionInformationField;
+            }
+            set
+            {
+                this.acquisitionInformationField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_AcquisitionInformation_PropertyType
+    {
+
+        private MI_AcquisitionInformation_Type mI_AcquisitionInformationField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_AcquisitionInformation_Type MI_AcquisitionInformation
+        {
+            get
+            {
+                return this.mI_AcquisitionInformationField;
+            }
+            set
+            {
+                this.mI_AcquisitionInformationField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_AcquisitionInformation", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_AcquisitionInformation_Type : AbstractObject_Type
+    {
+
+        private MI_Requirement_PropertyType[] acquisitionRequirementField;
+
+        private MI_Objective_PropertyType[] objectiveField;
+
+        private MI_Instrument_PropertyType[] instrumentField;
+
+        private MI_Plan_PropertyType[] acquisitionPlanField;
+
+        private MI_Operation_PropertyType[] operationField;
+
+        private MI_Platform_PropertyType[] platformField;
+
+        private MI_EnvironmentalRecord_PropertyType environmentalConditionsField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("acquisitionRequirement")]
+        public MI_Requirement_PropertyType[] acquisitionRequirement
+        {
+            get
+            {
+                return this.acquisitionRequirementField;
+            }
+            set
+            {
+                this.acquisitionRequirementField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("objective")]
+        public MI_Objective_PropertyType[] objective
+        {
+            get
+            {
+                return this.objectiveField;
+            }
+            set
+            {
+                this.objectiveField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("instrument")]
+        public MI_Instrument_PropertyType[] instrument
+        {
+            get
+            {
+                return this.instrumentField;
+            }
+            set
+            {
+                this.instrumentField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("acquisitionPlan")]
+        public MI_Plan_PropertyType[] acquisitionPlan
+        {
+            get
+            {
+                return this.acquisitionPlanField;
+            }
+            set
+            {
+                this.acquisitionPlanField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("operation")]
+        public MI_Operation_PropertyType[] operation
+        {
+            get
+            {
+                return this.operationField;
+            }
+            set
+            {
+                this.operationField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("platform")]
+        public MI_Platform_PropertyType[] platform
+        {
+            get
+            {
+                return this.platformField;
+            }
+            set
+            {
+                this.platformField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MI_EnvironmentalRecord_PropertyType environmentalConditions
+        {
+            get
+            {
+                return this.environmentalConditionsField;
+            }
+            set
+            {
+                this.environmentalConditionsField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_Requirement_PropertyType
+    {
+
+        private MI_Requirement_Type mI_RequirementField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_Requirement_Type MI_Requirement
+        {
+            get
+            {
+                return this.mI_RequirementField;
+            }
+            set
+            {
+                this.mI_RequirementField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_Requirement", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_Requirement_Type : AbstractObject_Type
+    {
+
+        private CI_Citation_PropertyType citationField;
+
+        private MD_Identifier_PropertyType identifierField;
+
+        private CI_ResponsibleParty_PropertyType[] requestorField;
+
+        private CI_ResponsibleParty_PropertyType[] recipientField;
+
+        private MI_PriorityCode_PropertyType priorityField;
+
+        private MI_RequestedDate_PropertyType requestedDateField;
+
+        private DateTime_PropertyType expiryDateField;
+
+        private MI_Plan_PropertyType[] satisifiedPlanField;
+
+        /// <remarks/>
+        public CI_Citation_PropertyType citation
+        {
+            get
+            {
+                return this.citationField;
+            }
+            set
+            {
+                this.citationField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MD_Identifier_PropertyType identifier
+        {
+            get
+            {
+                return this.identifierField;
+            }
+            set
+            {
+                this.identifierField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("requestor")]
+        public CI_ResponsibleParty_PropertyType[] requestor
+        {
+            get
+            {
+                return this.requestorField;
+            }
+            set
+            {
+                this.requestorField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("recipient")]
+        public CI_ResponsibleParty_PropertyType[] recipient
+        {
+            get
+            {
+                return this.recipientField;
+            }
+            set
+            {
+                this.recipientField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MI_PriorityCode_PropertyType priority
+        {
+            get
+            {
+                return this.priorityField;
+            }
+            set
+            {
+                this.priorityField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MI_RequestedDate_PropertyType requestedDate
+        {
+            get
+            {
+                return this.requestedDateField;
+            }
+            set
+            {
+                this.requestedDateField = value;
+            }
+        }
+
+        /// <remarks/>
+        public DateTime_PropertyType expiryDate
+        {
+            get
+            {
+                return this.expiryDateField;
+            }
+            set
+            {
+                this.expiryDateField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("satisifiedPlan")]
+        public MI_Plan_PropertyType[] satisifiedPlan
+        {
+            get
+            {
+                return this.satisifiedPlanField;
+            }
+            set
+            {
+                this.satisifiedPlanField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_PriorityCode_PropertyType
+    {
+
+        private CodeListValue_Type mI_PriorityCodeField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public CodeListValue_Type MI_PriorityCode
+        {
+            get
+            {
+                return this.mI_PriorityCodeField;
+            }
+            set
+            {
+                this.mI_PriorityCodeField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_RequestedDate_PropertyType
+    {
+
+        private MI_RequestedDate_Type mI_RequestedDateField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_RequestedDate_Type MI_RequestedDate
+        {
+            get
+            {
+                return this.mI_RequestedDateField;
+            }
+            set
+            {
+                this.mI_RequestedDateField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_RequestedDate", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_RequestedDate_Type : AbstractObject_Type
+    {
+
+        private DateTime_PropertyType requestedDateOfCollectionField;
+
+        private DateTime_PropertyType latestAcceptableDateField;
+
+        /// <remarks/>
+        public DateTime_PropertyType requestedDateOfCollection
+        {
+            get
+            {
+                return this.requestedDateOfCollectionField;
+            }
+            set
+            {
+                this.requestedDateOfCollectionField = value;
+            }
+        }
+
+        /// <remarks/>
+        public DateTime_PropertyType latestAcceptableDate
+        {
+            get
+            {
+                return this.latestAcceptableDateField;
+            }
+            set
+            {
+                this.latestAcceptableDateField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_Plan_PropertyType
+    {
+
+        private MI_Plan_Type mI_PlanField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_Plan_Type MI_Plan
+        {
+            get
+            {
+                return this.mI_PlanField;
+            }
+            set
+            {
+                this.mI_PlanField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_Plan", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_Plan_Type : AbstractObject_Type
+    {
+
+        private MI_GeometryTypeCode_PropertyType typeField;
+
+        private MD_ProgressCode_PropertyType statusField;
+
+        private CI_Citation_PropertyType citationField;
+
+        private MI_Requirement_PropertyType[] satisfiedRequirementField;
+
+        private MI_Operation_PropertyType[] operationField;
+
+        /// <remarks/>
+        public MI_GeometryTypeCode_PropertyType type
+        {
+            get
+            {
+                return this.typeField;
+            }
+            set
+            {
+                this.typeField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MD_ProgressCode_PropertyType status
+        {
+            get
+            {
+                return this.statusField;
+            }
+            set
+            {
+                this.statusField = value;
+            }
+        }
+
+        /// <remarks/>
+        public CI_Citation_PropertyType citation
+        {
+            get
+            {
+                return this.citationField;
+            }
+            set
+            {
+                this.citationField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("satisfiedRequirement")]
+        public MI_Requirement_PropertyType[] satisfiedRequirement
+        {
+            get
+            {
+                return this.satisfiedRequirementField;
+            }
+            set
+            {
+                this.satisfiedRequirementField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("operation")]
+        public MI_Operation_PropertyType[] operation
+        {
+            get
+            {
+                return this.operationField;
+            }
+            set
+            {
+                this.operationField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_GeometryTypeCode_PropertyType
+    {
+
+        private CodeListValue_Type mI_GeometryTypeCodeField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public CodeListValue_Type MI_GeometryTypeCode
+        {
+            get
+            {
+                return this.mI_GeometryTypeCodeField;
+            }
+            set
+            {
+                this.mI_GeometryTypeCodeField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_Operation_PropertyType
+    {
+
+        private MI_Operation_Type mI_OperationField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_Operation_Type MI_Operation
+        {
+            get
+            {
+                return this.mI_OperationField;
+            }
+            set
+            {
+                this.mI_OperationField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_Operation", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_Operation_Type : AbstractObject_Type
+    {
+
+        private CharacterString_PropertyType descriptionField;
+
+        private CI_Citation_PropertyType citationField;
+
+        private MD_Identifier_PropertyType identifierField;
+
+        private MD_ProgressCode_PropertyType statusField;
+
+        private MI_OperationTypeCode_PropertyType typeField;
+
+        private MI_Objective_PropertyType[] objectiveField;
+
+        private MI_Plan_PropertyType planField;
+
+        private MI_Operation_PropertyType[] childOperationField;
+
+        private MI_Event_PropertyType[] significantEventField;
+
+        private MI_Platform_PropertyType[] platformField;
+
+        /// <remarks/>
+        public CharacterString_PropertyType description
+        {
+            get
+            {
+                return this.descriptionField;
+            }
+            set
+            {
+                this.descriptionField = value;
+            }
+        }
+
+        /// <remarks/>
+        public CI_Citation_PropertyType citation
+        {
+            get
+            {
+                return this.citationField;
+            }
+            set
+            {
+                this.citationField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MD_Identifier_PropertyType identifier
+        {
+            get
+            {
+                return this.identifierField;
+            }
+            set
+            {
+                this.identifierField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MD_ProgressCode_PropertyType status
+        {
+            get
+            {
+                return this.statusField;
+            }
+            set
+            {
+                this.statusField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MI_OperationTypeCode_PropertyType type
+        {
+            get
+            {
+                return this.typeField;
+            }
+            set
+            {
+                this.typeField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("objective")]
+        public MI_Objective_PropertyType[] objective
+        {
+            get
+            {
+                return this.objectiveField;
+            }
+            set
+            {
+                this.objectiveField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MI_Plan_PropertyType plan
+        {
+            get
+            {
+                return this.planField;
+            }
+            set
+            {
+                this.planField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("childOperation")]
+        public MI_Operation_PropertyType[] childOperation
+        {
+            get
+            {
+                return this.childOperationField;
+            }
+            set
+            {
+                this.childOperationField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("significantEvent")]
+        public MI_Event_PropertyType[] significantEvent
+        {
+            get
+            {
+                return this.significantEventField;
+            }
+            set
+            {
+                this.significantEventField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("platform")]
+        public MI_Platform_PropertyType[] platform
+        {
+            get
+            {
+                return this.platformField;
+            }
+            set
+            {
+                this.platformField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_OperationTypeCode_PropertyType
+    {
+
+        private CodeListValue_Type mI_OperationTypeCodeField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public CodeListValue_Type MI_OperationTypeCode
+        {
+            get
+            {
+                return this.mI_OperationTypeCodeField;
+            }
+            set
+            {
+                this.mI_OperationTypeCodeField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_Objective_PropertyType
+    {
+
+        private MI_Objective_Type mI_ObjectiveField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_Objective_Type MI_Objective
+        {
+            get
+            {
+                return this.mI_ObjectiveField;
+            }
+            set
+            {
+                this.mI_ObjectiveField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_Objective", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_Objective_Type : AbstractObject_Type
+    {
+
+        private MD_Identifier_PropertyType[] identifierField;
+
+        private CharacterString_PropertyType priorityField;
+
+        private MI_ObjectiveTypeCode_PropertyType[] typeField;
+
+        private CharacterString_PropertyType[] functionField;
+
+        private EX_Extent_PropertyType[] extentField;
+
+        private MI_PlatformPass_PropertyType[] passField;
+
+        private MI_Instrument_PropertyType[] sensingInstrumentField;
+
+        private MI_Event_PropertyType[] objectiveOccurrenceField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("identifier")]
+        public MD_Identifier_PropertyType[] identifier
+        {
+            get
+            {
+                return this.identifierField;
+            }
+            set
+            {
+                this.identifierField = value;
+            }
+        }
+
+        /// <remarks/>
+        public CharacterString_PropertyType priority
+        {
+            get
+            {
+                return this.priorityField;
+            }
+            set
+            {
+                this.priorityField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("type")]
+        public MI_ObjectiveTypeCode_PropertyType[] type
+        {
+            get
+            {
+                return this.typeField;
+            }
+            set
+            {
+                this.typeField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("function")]
+        public CharacterString_PropertyType[] function
+        {
+            get
+            {
+                return this.functionField;
+            }
+            set
+            {
+                this.functionField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("extent")]
+        public EX_Extent_PropertyType[] extent
+        {
+            get
+            {
+                return this.extentField;
+            }
+            set
+            {
+                this.extentField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("pass")]
+        public MI_PlatformPass_PropertyType[] pass
+        {
+            get
+            {
+                return this.passField;
+            }
+            set
+            {
+                this.passField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("sensingInstrument")]
+        public MI_Instrument_PropertyType[] sensingInstrument
+        {
+            get
+            {
+                return this.sensingInstrumentField;
+            }
+            set
+            {
+                this.sensingInstrumentField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("objectiveOccurrence")]
+        public MI_Event_PropertyType[] objectiveOccurrence
+        {
+            get
+            {
+                return this.objectiveOccurrenceField;
+            }
+            set
+            {
+                this.objectiveOccurrenceField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_ObjectiveTypeCode_PropertyType
+    {
+
+        private CodeListValue_Type mI_ObjectiveTypeCodeField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public CodeListValue_Type MI_ObjectiveTypeCode
+        {
+            get
+            {
+                return this.mI_ObjectiveTypeCodeField;
+            }
+            set
+            {
+                this.mI_ObjectiveTypeCodeField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_PlatformPass_PropertyType
+    {
+
+        private MI_PlatformPass_Type mI_PlatformPassField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_PlatformPass_Type MI_PlatformPass
+        {
+            get
+            {
+                return this.mI_PlatformPassField;
+            }
+            set
+            {
+                this.mI_PlatformPassField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_PlatformPass", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_PlatformPass_Type : AbstractObject_Type
+    {
+
+        private MD_Identifier_PropertyType identifierField;
+
+        private GM_Object_PropertyType extentField;
+
+        private MI_Event_PropertyType[] relatedEventField;
+
+        /// <remarks/>
+        public MD_Identifier_PropertyType identifier
+        {
+            get
+            {
+                return this.identifierField;
+            }
+            set
+            {
+                this.identifierField = value;
+            }
+        }
+
+        /// <remarks/>
+        public GM_Object_PropertyType extent
+        {
+            get
+            {
+                return this.extentField;
+            }
+            set
+            {
+                this.extentField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("relatedEvent")]
+        public MI_Event_PropertyType[] relatedEvent
+        {
+            get
+            {
+                return this.relatedEventField;
+            }
+            set
+            {
+                this.relatedEventField = value;
+            }
+        }
+    }
+
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_Event_PropertyType
+    {
+
+        private MI_Event_Type mI_EventField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_Event_Type MI_Event
+        {
+            get
+            {
+                return this.mI_EventField;
+            }
+            set
+            {
+                this.mI_EventField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_Event", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_Event_Type : AbstractObject_Type
+    {
+
+        private MD_Identifier_PropertyType identifierField;
+
+        private MI_TriggerCode_PropertyType triggerField;
+
+        private MI_ContextCode_PropertyType contextField;
+
+        private MI_SequenceCode_PropertyType sequenceField;
+
+        private DateTime_PropertyType timeField;
+
+        private MI_Objective_PropertyType[] expectedObjectiveField;
+
+        private MI_Instrument_PropertyType[] relatedSensorField;
+
+        private MI_PlatformPass_PropertyType relatedPassField;
+
+        /// <remarks/>
+        public MD_Identifier_PropertyType identifier
+        {
+            get
+            {
+                return this.identifierField;
+            }
+            set
+            {
+                this.identifierField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MI_TriggerCode_PropertyType trigger
+        {
+            get
+            {
+                return this.triggerField;
+            }
+            set
+            {
+                this.triggerField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MI_ContextCode_PropertyType context
+        {
+            get
+            {
+                return this.contextField;
+            }
+            set
+            {
+                this.contextField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MI_SequenceCode_PropertyType sequence
+        {
+            get
+            {
+                return this.sequenceField;
+            }
+            set
+            {
+                this.sequenceField = value;
+            }
+        }
+
+        /// <remarks/>
+        public DateTime_PropertyType time
+        {
+            get
+            {
+                return this.timeField;
+            }
+            set
+            {
+                this.timeField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("expectedObjective")]
+        public MI_Objective_PropertyType[] expectedObjective
+        {
+            get
+            {
+                return this.expectedObjectiveField;
+            }
+            set
+            {
+                this.expectedObjectiveField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("relatedSensor")]
+        public MI_Instrument_PropertyType[] relatedSensor
+        {
+            get
+            {
+                return this.relatedSensorField;
+            }
+            set
+            {
+                this.relatedSensorField = value;
+            }
+        }
+
+        /// <remarks/>
+        public MI_PlatformPass_PropertyType relatedPass
+        {
+            get
+            {
+                return this.relatedPassField;
+            }
+            set
+            {
+                this.relatedPassField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_TriggerCode_PropertyType
+    {
+
+        private CodeListValue_Type mI_TriggerCodeField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public CodeListValue_Type MI_TriggerCode
+        {
+            get
+            {
+                return this.mI_TriggerCodeField;
+            }
+            set
+            {
+                this.mI_TriggerCodeField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_ContextCode_PropertyType
+    {
+
+        private CodeListValue_Type mI_ContextCodeField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public CodeListValue_Type MI_ContextCode
+        {
+            get
+            {
+                return this.mI_ContextCodeField;
+            }
+            set
+            {
+                this.mI_ContextCodeField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_SequenceCode_PropertyType
+    {
+
+        private CodeListValue_Type mI_SequenceCodeField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public CodeListValue_Type MI_SequenceCode
+        {
+            get
+            {
+                return this.mI_SequenceCodeField;
+            }
+            set
+            {
+                this.mI_SequenceCodeField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_EnvironmentalRecord_PropertyType
+    {
+
+        private MI_EnvironmentalRecord_Type mI_EnvironmentalRecordField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_EnvironmentalRecord_Type MI_EnvironmentalRecord
+        {
+            get
+            {
+                return this.mI_EnvironmentalRecordField;
+            }
+            set
+            {
+                this.mI_EnvironmentalRecordField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    [System.Xml.Serialization.XmlRootAttribute("MI_EnvironmentalRecord", Namespace = "http://www.isotc211.org/2005/gmi", IsNullable = false)]
+    public partial class MI_EnvironmentalRecord_Type : AbstractObject_Type
+    {
+
+        private Real_PropertyType averageAirTemperatureField;
+
+        private Real_PropertyType maxRelativeHumidityField;
+
+        private Real_PropertyType maxAltitudeField;
+
+        private CharacterString_PropertyType meterologicalConditionsField;
+
+        /// <remarks/>
+        public Real_PropertyType averageAirTemperature
+        {
+            get
+            {
+                return this.averageAirTemperatureField;
+            }
+            set
+            {
+                this.averageAirTemperatureField = value;
+            }
+        }
+
+        /// <remarks/>
+        public Real_PropertyType maxRelativeHumidity
+        {
+            get
+            {
+                return this.maxRelativeHumidityField;
+            }
+            set
+            {
+                this.maxRelativeHumidityField = value;
+            }
+        }
+
+        /// <remarks/>
+        public Real_PropertyType maxAltitude
+        {
+            get
+            {
+                return this.maxAltitudeField;
+            }
+            set
+            {
+                this.maxAltitudeField = value;
+            }
+        }
+
+        /// <remarks/>
+        public CharacterString_PropertyType meterologicalConditions
+        {
+            get
+            {
+                return this.meterologicalConditionsField;
+            }
+            set
+            {
+                this.meterologicalConditionsField = value;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_ImageDescription_PropertyType
+    {
+
+        private MI_ImageDescription_Type mI_ImageDescriptionField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_ImageDescription_Type MI_ImageDescription
+        {
+            get
+            {
+                return this.mI_ImageDescriptionField;
+            }
+            set
+            {
+                this.mI_ImageDescriptionField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_CoverageDescription_PropertyType
+    {
+
+        private MI_CoverageDescription_Type mI_CoverageDescriptionField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_CoverageDescription_Type MI_CoverageDescription
+        {
+            get
+            {
+                return this.mI_CoverageDescriptionField;
+            }
+            set
+            {
+                this.mI_CoverageDescriptionField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_Band_PropertyType
+    {
+
+        private MI_Band_Type mI_BandField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_Band_Type MI_Band
+        {
+            get
+            {
+                return this.mI_BandField;
+            }
+            set
+            {
+                this.mI_BandField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_Georectified_PropertyType
+    {
+
+        private MI_Georectified_Type mI_GeorectifiedField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_Georectified_Type MI_Georectified
+        {
+            get
+            {
+                return this.mI_GeorectifiedField;
+            }
+            set
+            {
+                this.mI_GeorectifiedField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_Georeferenceable_PropertyType
+    {
+
+        private MI_Georeferenceable_Type mI_GeoreferenceableField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_Georeferenceable_Type MI_Georeferenceable
+        {
+            get
+            {
+                return this.mI_GeoreferenceableField;
+            }
+            set
+            {
+                this.mI_GeoreferenceableField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class QE_Usability_PropertyType
+    {
+
+        private QE_Usability_Type qE_UsabilityField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public QE_Usability_Type QE_Usability
+        {
+            get
+            {
+                return this.qE_UsabilityField;
+            }
+            set
+            {
+                this.qE_UsabilityField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class QE_CoverageResult_PropertyType
+    {
+
+        private QE_CoverageResult_Type qE_CoverageResultField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public QE_CoverageResult_Type QE_CoverageResult
+        {
+            get
+            {
+                return this.qE_CoverageResultField;
+            }
+            set
+            {
+                this.qE_CoverageResultField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class LE_ProcessStep_PropertyType
+    {
+
+        private LE_ProcessStep_Type lE_ProcessStepField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public LE_ProcessStep_Type LE_ProcessStep
+        {
+            get
+            {
+                return this.lE_ProcessStepField;
+            }
+            set
+            {
+                this.lE_ProcessStepField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_Metadata_PropertyType
+    {
+
+        private MI_Metadata_Type mI_MetadataField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public MI_Metadata_Type MI_Metadata
+        {
+            get
+            {
+                return this.mI_MetadataField;
+            }
+            set
+            {
+                this.mI_MetadataField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmi")]
+    public partial class MI_SensorTypeCode_PropertyType
+    {
+
+        private CodeListValue_Type mI_SensorTypeCodeField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public CodeListValue_Type MI_SensorTypeCode
+        {
+            get
+            {
+                return this.mI_SensorTypeCodeField;
+            }
+            set
+            {
+                this.mI_SensorTypeCodeField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.isotc211.org/2005/gco")]
+        public string nilReason
+        {
+            get
+            {
+                return this.nilReasonField;
+            }
+            set
+            {
+                this.nilReasonField = value;
+            }
+        }
+    }
 
 }
